@@ -41,8 +41,8 @@ To override or provide more patterns, add `patterns` to user settings, e.g.
 "patterns": {
     "TODO": "TODO[\\s]*?:+(?P<todo>.*)$",
     "NOTE": "NOTE[\\s]*?:+(?P<note>.*)$",
-    "FIXME": "FIX ?ME[\\s]*?:+(?P<fixme>\\S.*)$",
-    "CHANGED": "CHANGED[\\s]*?:+(?P<changed>\\S.*)$"
+    "FIXME": "FIX ?ME[\\s]*?:+(?P<fixme>.*)$",
+    "CHANGED": "CHANGED[\\s]*?:+(?P<changed>.*)$"
 }
 ```
 
