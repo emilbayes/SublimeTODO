@@ -39,10 +39,11 @@ To override or provide more patterns, add `patterns` to user settings, e.g.
 
 ```javascript
 "patterns": {
-    "TODO": "TODO[\\s]*?:+(?P<todo>.*)$",
-    "NOTE": "NOTE[\\s]*?:+(?P<note>.*)$",
-    "FIXME": "FIX ?ME[\\s]*?:+(?P<fixme>.*)$",
-    "CHANGED": "CHANGED[\\s]*?:+(?P<changed>.*)$"
+    "TODO": "TODO[\\s]*?:+(?P<todo>.*)(\\-\\->|\\*\/|\"\"\"|=cut|=end|''')!?$",
+    "NOTE": "NOTE[\\s]*?:+(?P<note>.*)(\\-\\->|\\*\/|\"\"\"|=cut|=end|''')!?$",
+    "FIXME": "FIX ?ME[\\s]*?:+(?P<fixme>.*)(\\-\\->|\\*\/|\"\"\"|=cut|=end|''')!?$",
+    "CHANGED": "CHANGED[\\s]*?:+(?P<changed>.*)(\\-\\->|\\*\/|\"\"\"|=cut|=end|''')!?$",
+    "XXX": "XXX[\s]*?:+(?P<xxx>.*)(\\-\\->|\\*\/|\"\"\"|=cut|=end|''')!?$"
 }
 ```
 
