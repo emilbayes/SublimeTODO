@@ -30,7 +30,8 @@ DEFAULT_SETTINGS = {
         'TODO': r'TODO[\s]*?:+(?P<todo>.*)(\\-\\->|\\*\/|"""|=cut|=end|\'\'\')!?$',
         'NOTE': r'NOTE[\s]*?:+(?P<note>.*)(\\-\\->|\\*\/|"""|=cut|=end|\'\'\')!?$',
         'FIXME': r'FIX ?ME[\s]*?:+(?P<fixme>.*)(\\-\\->|\\*\/|"""|=cut|=end|\'\'\')!?$',
-        'CHANGED': r'CHANGED[\s]*?:+(?P<changed>.*)(\\-\\->|\\*\/|"""|=cut|=end|\'\'\')!?$'
+        'CHANGED': r'CHANGED[\s]*?:+(?P<changed>.*)(\\-\\->|\\*\/|"""|=cut|=end|\'\'\')!?$',
+        'XXX': r'XXX[\s]*?:+(?P<xxx>.*)(\\-\\->|\\*\/|"""|=cut|=end|\'\'\')!?$'
     },
 
     'patterns': {}
