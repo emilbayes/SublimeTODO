@@ -27,10 +27,10 @@ DEFAULT_SETTINGS = {
     'result_title': 'TODO Results',
 
     'core_patterns': {
-        'TODO': r'TODO[\s]*?:+(?P<todo>.*)$',
-        'NOTE': r'NOTE[\s]*?:+(?P<note>.*)$',
-        'FIXME': r'FIX ?ME[\s]*?:+(?P<fixme>.*)$',
-        'CHANGED': r'CHANGED[\s]*?:+(?P<changed>.*)$'
+        'TODO': r'TODO[\s]*?:+(?P<todo>.*)(\\-\\->|\\*\/|"""|=cut|=end|\'\'\')!?$',
+        'NOTE': r'NOTE[\s]*?:+(?P<note>.*)(\\-\\->|\\*\/|"""|=cut|=end|\'\'\')!?$',
+        'FIXME': r'FIX ?ME[\s]*?:+(?P<fixme>.*)(\\-\\->|\\*\/|"""|=cut|=end|\'\'\')!?$',
+        'CHANGED': r'CHANGED[\s]*?:+(?P<changed>.*)(\\-\\->|\\*\/|"""|=cut|=end|\'\'\')!?$'
     },
 
     'patterns': {}
