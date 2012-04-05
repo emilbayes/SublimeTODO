@@ -33,8 +33,7 @@ See an example user settings file [here](https://gist.github.com/2049887).
 ## Adding comment patterns
 
 Extraction uses regular expressions that return one match group 
-representing the message. Default patterns are provided for `TODO`, `NOTE`, `FIXME` 
-and `CHANGED` comments.
+representing the message. Default patterns are provided for `TODO`, `NOTE`, `FIXME`, `CHANGED` and `XXX` comments.
 To override or provide more patterns, add `patterns` to user settings, e.g.
 
 ```javascript
